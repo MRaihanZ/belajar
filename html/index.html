@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tugas 23-06-2023 | HTML</title>
+	</head>
+	<body>
+		<main>
+			<section id="form_jadwal">
+				<center>
+					<h1>Input Jadwal Kuliah Gunadarma 1IA25</h1>
+					<form action="" method="post">
+						<label for="matkul">Nama Matakuliah: </label>
+						<input id="matkul" name="matkul" placeholder="Matakuliah" />
+						<label for="dosen">Nama Dosen: </label>
+						<input id="dosen" name="dosen" placeholder="Dosen" />
+						<label for="bobot">Bobot: </label>
+						<input list="bobot" name="bobot" />
+						<datalist id="bobot">
+							<option value="*"></option>
+							<option value="**"></option>
+							<option value="***"></option>
+						</datalist>
+						<label for="hari">Hari: </label>
+						<input list="hari" name="hari" />
+						<datalist id="hari">
+							<option value="Senin"></option>
+							<option value="Selasa"></option>
+							<option value="Rabu"></option>
+							<option value="Kamis"></option>
+							<option value="Jumat"></option>
+							<option value="Sabtu"></option>
+						</datalist>
+						<label for="jam">Jam: </label>
+						<input list="jam" name="jam" />
+						<datalist id="jam">
+							<option value="Jam Kosong"></option>
+							<option value="1: 07.30 - 08.30"></option>
+							<option value="2: 08.30 - 09.30"></option>
+							<option value="3: 09.30 - 10.30"></option>
+							<option value="4: 10.30 - 11.30"></option>
+							<option value="5: 11.30 - 12.30"></option>
+							<option value="6: 12.30 - 13.30"></option>
+							<option value="7: 13.30 - 14.30"></option>
+							<option value="8: 14.30 - 15.30"></option>
+							<option value="9: 15.30 - 16.30"></option>
+							<option value="10: 16.30 - 17.30"></option>
+						</datalist>
+					</form>
+				</center>
+			</section>
+			<hr />
+			<br />
+			<br />
+			<section id="jadwal">
+				<center>
+					<table border="1">
+						<thead>
+							<tr>
+								<th colspan="7">Jadwal Kuliah Guandarma Semester 2</th>
+							</tr>
+							<tr>
+								<th>Jam</th>
+								<th>Senin</th>
+								<th>Selasa</th>
+								<th>Rabu</th>
+								<th>Kamis</th>
+								<th>Jumat</th>
+								<th>Sabtu</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1: 07.30 - 08.30</td>
+								<td rowspan="2">AP 2B *</td>
+								<td rowspan="2">Jam Kosong</td>
+								<td rowspan="2">Jam Kosong</td>
+								<td rowspan="2">Fiskim 2A</td>
+								<td rowspan="2">Jam Kosong</td>
+								<td rowspan="2">Jam Kosong</td>
+							</tr>
+							<tr>
+								<td>2: 08.30 - 09.30</td>
+							</tr>
+							<tr>
+								<td>3: 09.30 - 10.30</td>
+								<td rowspan="2">KTI A **</td>
+								<td rowspan="5">Lepkom & TKA(TT)</td>
+								<td rowspan="3">Praktikum Fisdas</td>
+								<td rowspan="2">Matif 2 **</td>
+								<td rowspan="2">LAPTIK</td>
+								<td rowspan="2">ISD</td>
+							</tr>
+							<tr>
+								<td>4: 10.30 - 11.30</td>
+							</tr>
+							<tr>
+								<td>5: 11.30 - 12.30</td>
+								<td>Jam Kosong</td>
+								<td rowspan="2">Matdas 2 *</td>
+								<td rowspan="2">Jam Kosong</td>
+								<td rowspan="2">KTI B **</td>
+							</tr>
+							<tr>
+								<td>6: 12.30 - 13.30</td>
+								<td rowspan="2">AP 2C *</td>
+								<td rowspan="2">Prkatikum AP 2B</td>
+							</tr>
+							<tr>
+								<td>7: 13.30 - 14.30</td>
+								<td rowspan="2">Jam Kosong</td>
+								<td rowspan="2">Fiskim 2B</td>
+								<td rowspan="4">Jam Kosong</td>
+							</tr>
+							<tr>
+								<td>8: 14.30 - 15.30</td>
+								<td rowspan="2">PP *</td>
+								<td rowspan="3">Jam Kosong</td>
+								<td rowspan="3">Praktikum AP 2A</td>
+							</tr>
+							<tr>
+								<td>9: 15.30 - 16.30</td>
+								<td rowspan="2">AP 2A *</td>
+								<td rowspan="2">KTI C **</td>
+							</tr>
+							<tr>
+								<td>10: 16.30 - 17.30</td>
+								<td>Jam Kosong</td>
+							</tr>
+						</tbody>
+					</table>
+				</center>
+			</section>
+			<br />
+			<hr />
+			<section id="note">
+				<p>* : Mata Kuliah Ujian Utama/Ujian Negara</p>
+				<p>
+					** : Mata Kuliah Praktikum Penunjang (Mata Kuliah ini wajib diikuti
+					dengan praktikumnya)
+				</p>
+				<p>
+					*** : Agama Islam, Agama Kristen, Agama Katholik, Agama Hindu, Agama
+					Budha
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
